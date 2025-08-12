@@ -33,9 +33,9 @@ Your task is to triage the current malware threat and figure out which infrastru
 
 [CVE Websites](https://github.com/s-estrada/TelstraCybersecurityAnalyst/blob/main/Task%201%20CVE%20Websites)
 
-[Firewall Infrastructure](https://github.com/track001/TelstraCybersecurityAnalyst/blob/main/T2%20-%20Firewall%20Request%20Template.docx)
+[Firewall Infrastructure](https://github.com/s-estrada/TelstraCybersecurityAnalyst/blob/main/Task%201_2%20-%20Firewall_Infrastructure%20List.xlsx)
 
-[Email Template](https://github.com/track001/TelstraCybersecurityAnalyst/blob/main/T1%20-%20Email%20Template.docx)
+[Email Template](https://github.com/s-estrada/TelstraCybersecurityAnalyst/blob/main/T1%20-%20Email%20Template.docx)
 
 ## Task 2 (T2): Firewall Rule Creation Request
 This task involves analyzing firewall logs to identify attacker network patterns. The deliverable is a formal request to the firewall management team, detailing the attack, specifying the traffic to be blocked, and providing supporting research findings.
