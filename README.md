@@ -60,6 +60,11 @@ Work with the networks team to implement a firewall rule using the Python script
 ### Task:
 Use Python to develop a firewall rule to mitigate the attack. Develop this rule in `firewall_server.py` and only upload this file back here. You may use `test_requests.py` to test your code whilst the firewall HTTP server is running.
 
+### Task 3 Resources:
+- [Spring4Shell Proof of Concept Payload](https://github.com/craig/SpringCore0day/blob/main/exp.py)
+- [Python HTTPServer documentation](https://docs.python.org/3/library/http.server.html)
+- [Firewall Starter Codebase](https://github.com/s-estrada/TelstraCybersecurityAnalyst/blob/main/T3%20Firewall%20Starter%20Codebase.zip)
+
 ## Usage
 
 1. Clone the repository to your local machine:
@@ -86,12 +91,6 @@ The `block_request` function handles blocking a request and sending a 403 Forbid
 The `handle_request` function processes each incoming request. It checks the request path and examines the request headers for potential malicious headers. If a request is on the Spring Framework path and contains any of the predefined bad headers, the request is blocked and a 403 Forbidden response is sent.
 
 The ServerHandler class defines the behavior for different HTTP methods (GET and POST). It calls the handle_request function to process incoming requests.
-
-### Task 3 Resources:
-- [Spring4Shell Proof of Concept Payload](https://github.com/craig/SpringCore0day/blob/main/exp.py)
-- [Python HTTPServer documentation](https://docs.python.org/3/library/http.server.html)
-- [Firewall Starter Codebase](https://github.com/s-estrada/TelstraCybersecurityAnalyst/blob/main/T3%20Firewall%20Starter%20Codebase.zip)
-
 
 ## Task 4 (T4) - Postmortem
 This repository contains the postmortem report for the Spring4Shell malware attack incident. The postmortem provides a detailed analysis of the incident, including its impact, detection, root cause, resolution, and action items for future improvement.
