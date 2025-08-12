@@ -25,10 +25,10 @@ This repository provides solutions, code samples, and example communications to 
 ## Task 1 (T1): Incident Initiation - Awareness and Mitigation
 This task centers on the initial incident response. The goal is to triage malware threats, identify compromised infrastructure, and dispatch an initial incident communication to the relevant teams, providing awareness and mitigation steps to begin the response process.
 
-Background Information:
+### Background Information:
 You are an information security analyst in the Security Operations Centre. A common task and responsibility of information security analysts in the SOC is to respond to triage incoming threats and respond appropriately, by notifying the correct team depending on the severity of the threat. It’s important to be able to communicate the severity of the incident to the right person so that the organisation can come together in times of attack. The firewall logs & list of infrastructure has been provided, which shows critical services that run the Spring Framework and need to be online / uninterrupted. A list of teams has also been provided, which depending on the severity of the threat, must be contacted. It’s important to note that the service is down and functionality is impaired due to the malware attack.
 
-Task:
+### Task:
 Your task is to triage the current malware threat and figure out which infrastructure is affected. First, find out which key infrastructure is currently under attack. Note the priority of the affected infrastructure to the company - this will determine who is the respective team to notify. After, draft an email to the respective team alerting them of the current attack so that they can begin an incident response. Make sure to include the timestamp of when the incident occurred. Make it concise and contextual. The purpose of this email is to ensure the respective team is aware of the ongoing incident and to be prepared for mitigation advice.
 
 ### Task 1 Resources:
@@ -38,6 +38,17 @@ Your task is to triage the current malware threat and figure out which infrastru
 
 ## Task 2 (T2): Firewall Rule Creation Request
 This task involves analyzing firewall logs to identify attacker network patterns. The deliverable is a formal request to the firewall management team, detailing the attack, specifying the traffic to be blocked, and providing supporting research findings.
+
+### Background Info:
+Now that you have notified the infrastructure owner of the current attack, analyse the firewall logs to find the pattern in the attacker’s network requests. You won’t be able to simply block IP addresses, because of the distributed nature of the attack, but maybe there is another characteristic of the request that is easy to block. An important responsibility of an information security analyst is the ability to work across disciplines with multiple teams, both technical and non-technical. In the resources section, we have attached a proof of concept payload that may be of interest in understanding how the attacker scripted this attack.
+
+### Task:
+First, analyse the firewall logs in the resources section. Next, identify what characteristics of the Spring4Shell vulnerability have been used. Finally, draft an email to the networks team with your findings. Make sure to be concise, so that they can develop the firewall rule to mitigate the attack. You can assume the recipient is technical and has dealt with these types of requests before.
+
+### Task 2 Resources:
+- [Spring4Shell Proof of Concept Payload](https://github.com/craig/SpringCore0day/blob/main/exp.py)
+- [Affected Infrastructure List & Firewall Logs](https://github.com/s-estrada/TelstraCybersecurityAnalyst/blob/main/T1%20-%20Firewall_Infrastructure%20List.xlsx)
+- [Firewall Rule Creation Request Email Template](https://github.com/s-estrada/TelstraCybersecurityAnalyst/blob/main/T2%20-%20Firewall%20Request%20Template.docx)
 
 ## Task 3 (T3) - Firewall Server
 This part of the repository contains the solution for a custom firewall server developed in Python. The server is designed to inspect incoming HTTP requests for malicious headers and block those that match a predefined list. The core functionality is implemented using Python's http.server module, extending BaseHTTPRequestHandler to perform header analysis and send a 403 Forbidden response for malicious requests.
