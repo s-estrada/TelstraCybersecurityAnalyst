@@ -32,9 +32,11 @@ You are an information security analyst in the Security Operations Centre. A com
 Your task is to triage the current malware threat and figure out which infrastructure is affected. First, find out which key infrastructure is currently under attack. Note the priority of the affected infrastructure to the company - this will determine who is the respective team to notify. After, draft an email to the respective team alerting them of the current attack so that they can begin an incident response. Make sure to include the timestamp of when the incident occurred. Make it concise and contextual. The purpose of this email is to ensure the respective team is aware of the ongoing incident and to be prepared for mitigation advice.
 
 ### Task 1 Resources:
-- [CVE Websites](https://github.com/s-estrada/TelstraCybersecurityAnalyst/blob/main/Task%201%20CVE%20Websites)
 - [Firewall Infrastructure](https://github.com/s-estrada/TelstraCybersecurityAnalyst/blob/main/Task%201_2%20-%20Firewall_Infrastructure%20List.xlsx)
 - [Email Template](https://github.com/s-estrada/TelstraCybersecurityAnalyst/blob/main/T1%20-%20Email%20Template.docx)
+- CVE Websites:
+    [CISA Alert Advisory on Spring4Shell zero-day vulnerability](https://www.cisa.gov/news-events/alerts/2022/04/01/spring-releases-security-updates-addressing-spring4shell-and-spring-cloud-function-vulnerabilities)
+    [CVE Advisory on Spring4Shell zero-day vulnerability](https://spring.io/security/cve-2022-22965)
 
 ## Task 2 (T2): Firewall Rule Creation Request
 This task involves analyzing firewall logs to identify attacker network patterns. The deliverable is a formal request to the firewall management team, detailing the attack, specifying the traffic to be blocked, and providing supporting research findings.
@@ -85,6 +87,12 @@ The `block_request` function handles blocking a request and sending a 403 Forbid
 The `handle_request` function processes each incoming request. It checks the request path and examines the request headers for potential malicious headers. If a request is on the Spring Framework path and contains any of the predefined bad headers, the request is blocked and a 403 Forbidden response is sent.
 
 The ServerHandler class defines the behavior for different HTTP methods (GET and POST). It calls the handle_request function to process incoming requests.
+
+### Task 3 Resources:
+- [Spring4Shell Proof of Concept Payload](https://github.com/craig/SpringCore0day/blob/main/exp.py)
+- [Python HTTPServer documentation](https://docs.python.org/3/library/http.server.html)
+- [Firewall Starter Codebase](https://github.com/s-estrada/TelstraCybersecurityAnalyst/blob/main/T3%20Firewall%20Starter%20Codebase.zip)
+
 
 ## Task 4 (T4) - Postmortem
 This repository contains the postmortem report for the Spring4Shell malware attack incident. The postmortem provides a detailed analysis of the incident, including its impact, detection, root cause, resolution, and action items for future improvement.
