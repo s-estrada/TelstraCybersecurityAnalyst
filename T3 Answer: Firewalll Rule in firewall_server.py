@@ -1,6 +1,6 @@
 
 """
-Task 3/4: Develop a firewall rule to mitigate the ongoing malware attack on the Spring Framework.
+Task 3: Develop a firewall rule to mitigate the ongoing malware attack on the Spring Framework.
 
 Solution:
 - Create a custom firewall server that blocks incoming requests to the specific path "/tomcatwar.jsp".
