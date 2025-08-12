@@ -35,8 +35,7 @@ Your task is to triage the current malware threat and figure out which infrastru
 - [Firewall Infrastructure](https://github.com/s-estrada/TelstraCybersecurityAnalyst/blob/main/Task%201_2%20-%20Firewall_Infrastructure%20List.xlsx)
 - [Email Template](https://github.com/s-estrada/TelstraCybersecurityAnalyst/blob/main/T1%20-%20Email%20Template.docx)
 - CVE Websites:
-    [CISA Alert Advisory on Spring4Shell zero-day vulnerability](https://www.cisa.gov/news-events/alerts/2022/04/01/spring-releases-security-updates-addressing-spring4shell-and-spring-cloud-function-vulnerabilities)
-    [CVE Advisory on Spring4Shell zero-day vulnerability](https://spring.io/security/cve-2022-22965)
+    [CISA Alert Advisory on Spring4Shell zero-day vulnerability](https://www.cisa.gov/news-events/alerts/2022/04/01/spring-releases-security-updates-addressing-spring4shell-and-spring-cloud-function-vulnerabilities) & [CVE Advisory on Spring4Shell zero-day vulnerability](https://spring.io/security/cve-2022-22965)
 
 ## Task 2 (T2): Firewall Rule Creation Request
 This task involves analyzing firewall logs to identify attacker network patterns. The deliverable is a formal request to the firewall management team, detailing the attack, specifying the traffic to be blocked, and providing supporting research findings.
