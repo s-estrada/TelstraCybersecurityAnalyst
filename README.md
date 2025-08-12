@@ -1,119 +1,64 @@
-# TelstraCybersecurityAnalyst
-# Cybersecurity Analyst at Telstra
-- https://www.telstra.com.au/
-- https://www.theforage.com/virtual-internships/prototype/RNhbu8QnDzthwynEf/Cybersecurity?ref=NatiJPDMj6TPQBjeC
+#Telstra Cybersecurity Virtual Experience Repository
+This repository documents the work completed during the Telstra Cybersecurity Virtual Experience, focusing on the role of a cybersecurity analyst. The program simulates a real-world scenario involving a malware attack and is structured around four key tasks.
 
-This repository showcases the Day in the Life (DITL) of a cybersecurity analyst at Telstra, a leading telecommunications company based in Australia. The DITL experience focuses on handling a malware attack and includes the following 4 tasks:
+Task 1: Incident Response & Triage
+This section covers the initial stages of a malware attack, including the immediate response and triaging of security alerts. The work demonstrates skills in incident detection, response coordination, and effective communication with various teams.
 
-### Task 1: Responding to a Malware Attack
+Task 2: Attack Analysis
+This task involves a detailed analysis of the malware attack to understand its propagation methods and behavioral patterns. The repository showcases proficiency in network analysis, data analysis, and threat research.
 
-- Triaging alerts and promptly responding to a malware attack by coordinating with the appropriate teams.
-- Developing skills in incident triage, detection, response, research, communication, data analysis, and teamwork.
+Task 3: Malware Mitigation (Technical)
+This part focuses on the technical mitigation of the attack. It includes the development and implementation of firewall rules using Python to block the malware's identified network patterns. The task highlights skills in security engineering, software development, and problem-solving.
 
-### Task 2: Analyzing the Attack
+Task 4: Incident Postmortem
+The final task is a comprehensive post-incident review. This section includes a detailed postmortem report that reflects on the incident's timeline, impact, root cause, and resolution, and outlines a strategy for future improvements. It emphasizes skills in root cause analysis, governance, and risk management.
 
-- Conducting a thorough analysis of malware attack data to identify the spread mechanisms and patterns used by the attacker.
-- Utilizing network analysis, cybersecurity techniques, data analysis, research, communication, and teamwork.
-### Task 3: (Technical) Mitigating the Malware Attack
+This repository provides solutions, code samples, and example communications to illustrate the skills and knowledge acquired through the Telstra Cybersecurity Virtual Experience.
 
-- Using Python programming skills, designing and implementing firewall rules to prevent the further spread of the malware based on identified patterns.
-- Applying software development, Python coding, security engineering, solution architecture, design thinking, and problem-solving abilities.
+In-Depth Task Descriptions
+Task 1: Incident Initiation - Awareness and Mitigation
+This task centers on the initial incident response. The goal is to triage malware threats, identify compromised infrastructure, and dispatch an initial incident communication to the relevant teams, providing awareness and mitigation steps to begin the response process.
 
-## Task 4: Incident Postmortem
+Task 2: Firewall Rule Creation Request
+This task involves analyzing firewall logs to identify attacker network patterns. The deliverable is a formal request to the firewall management team, detailing the attack, specifying the traffic to be blocked, and providing supporting research findings.
 
-- Engaging in an incident reflection process to analyze and reflect on the incident's details and outcomes.
-- Developing skills in incident reflection, root cause analysis, communication, strategy, governance, risk management, and compliance.
+Task 3: Firewall Server (Python)
+This part of the repository contains the solution for a custom firewall server developed in Python. The server is designed to inspect incoming HTTP requests for malicious headers and block those that match a predefined list. The core functionality is implemented using Python's http.server module, extending BaseHTTPRequestHandler to perform header analysis and send a 403 Forbidden response for malicious requests.
 
-This repository provides solutions, code samples, and example emails for each task to showcase the skills and knowledge gained during the Telstra Cybersecurity Virtual Experience.
+Usage:
 
-# Expansion of the Tasks
-
-## Task 1 (T1): Incident Initiation - Awareness and Mitigation
-
-The Incident Initiation Email is the initial communication sent to the respective team responsible for addressing the ongoing malware attack. It provides awareness about the attack and offers mitigation advice to begin the incident response process. The purpose of this task is to triage current malware threats, identify affected infrastructure, and initiate an incident response.
-
-## Task 2 (T2): Firewall Rule Creation Request
-
-The Firewall Rule Creation Request is a communication sent to the respective team responsible for managing the firewall. It outlines the details of the ongoing attack, provides information about the type of traffic to be blocked, and includes any additional research findings on the attack. The purpose of this task is to analyze firewall logs, identify patterns in the attacker's network requests, and request the creation of a firewall rule to mitigate the attack.
-
-## Task 3 (T3) - Firewall Server
-
-This repository contains the solution for Task 3 of the Telstra Cybersecurity Virtual Experience - Firewall Server. The Firewall Server is designed to handle incoming HTTP requests, analyze them for potential malicious headers, and block requests that match the predefined set of bad headers. See "main.py" for the Python code.
-
-## Usage
-
-1. Clone the repository to your local machine:
-
-```shell
 git clone https://github.com/track001/TelstraCybersecurityAnalyst.git
-```
 
-### Navigate to the cloned repository:
-```shell
-cd <TelstraCybersecurityAnalyst>
-```
-Run the Firewall Server:
-```shell
+cd TelstraCybersecurityAnalyst
+
 python main.py
-```
-The Firewall Server will start running on localhost at port 8000.
 
-## Explanation
-The Firewall Server code is implemented using Python's built-in http.server module. It extends the BaseHTTPRequestHandler class to handle incoming requests and perform header analysis.
+The server runs on localhost at port 8000.
 
-The `block_request` function handles blocking a request and sending a 403 Forbidden response.
+Task 4: Postmortem Report
+This section includes a comprehensive postmortem report for the Spring4Shell malware incident. The report details the incident from detection to resolution, providing a structured analysis of its impact, root cause, and the steps taken to contain and mitigate the attack. It concludes with actionable items to prevent future occurrences. The report is organized into the following sections:
 
-The `handle_request` function processes each incoming request. It checks the request path and examines the request headers for potential malicious headers. If a request is on the Spring Framework path and contains any of the predefined bad headers, the request is blocked and a 403 Forbidden response is sent.
+Summary: An overview of the incident, including its timeline, severity, and key stakeholders.
 
-The ServerHandler class defines the behavior for different HTTP methods (GET and POST). It calls the handle_request function to process incoming requests.
+Impact: An assessment of the potential consequences, such as data exfiltration or system disruption.
 
-## Task 4 (T4) - Postmortem
-This repository contains the postmortem report for the Spring4Shell malware attack incident. The postmortem provides a detailed analysis of the incident, including its impact, detection, root cause, resolution, and action items for future improvement.
+Detection: An explanation of how the attack was discovered through proactive monitoring and threat detection systems.
 
-The Spring4Shell malware attack targeted the Spring Framework within our system infrastructure. The incident was promptly detected and addressed by the Security Operations Center (SOC) team. This postmortem report outlines the key findings and actions taken to mitigate the attack.
+Root Cause: A deep-dive into the underlying vulnerability (Spring4Shell) that was exploited.
 
-### Contents
-- Summary
-- Impact
-- Detection
-- Root Cause
-- Resolution
-- Action Items
+Resolution: A summary of the immediate actions taken, including system isolation, firewall rule implementation, and patching.
 
-### Summary
-The Spring4Shell malware attack involved the exploitation of a vulnerability in the Spring Framework, allowing unauthorized code execution and potential system compromise. This section provides a summary of the incident, including timestamps, severity, and key stakeholders involved.
+Action Items: A list of recommendations to enhance security posture, such as vulnerability assessments and security awareness training.
 
-### Impact
-The impact section describes the potential consequences of the malware attack, including unauthorized access, data theft, and system disruption. It highlights the measures taken to mitigate the impact and protect sensitive data.
+ACSC Essential Eight Mitigation Strategies
+These are a set of Australian Cyber Security Centre (ACSC) recommended strategies to bolster system security against various cyber threats.  They include:
 
-### Detection
-The detection section explains how the malware attack was discovered, including the proactive monitoring and anomaly detection systems that triggered alerts. It provides insights into the network traffic patterns and malicious HTTP headers associated with the Spring4Shell vulnerability.
+Application Control: Limiting software execution to an approved list.
 
-### Root Cause
-The root cause analysis identifies the underlying cause of the incident, which was the presence of the Spring4Shell vulnerability in our system. It describes the vulnerability and its impact on the affected systems.
+Patching: Regularly updating applications and operating systems to address vulnerabilities.
 
-### Resolution
-The resolution section outlines the immediate actions taken to contain and mitigate the malware attack. It includes details on isolating the affected system, implementing firewall rules, and patching/updating the Spring Framework to secure versions.
+User Application Hardening: Securing applications like web browsers and Office suites.
 
-### Action Items
-The action items section provides a list of recommended steps and measures to prevent similar incidents in the future. It covers areas such as vulnerability assessment, intrusion detection, system monitoring, and security awareness training.
+Restricting Admin Privileges: Limiting administrative access to minimize the blast radius of an attack.
 
----
-
-By conducting this postmortem and implementing the recommended action items, we aim to strengthen our system security, minimize the risk of future incidents, and ensure the ongoing protection of our infrastructure and data.
-
-# ACSC 8 Mitigation Strategies 
-ACSC 8 essential mitigation strategies are a set of recommended cybersecurity practices to make it harder for adversaries to compromise systems. 
-
-[Get the Basics of Cyber Security Right: The Essential Eight](https://www.telstra.com.au/smarter-business/cyber-security-and-safety/how-to-get-the-basics-of-cyber-security-right)
-
-
-These strategies are:
-
-- Application Control: Ensuring only approved applications can be installed or executed on systems.
-- Patch Applications: Upgrading software to the latest versions to fix known vulnerabilities.
-- Configure Microsoft Office Macro settings: Securing Microsoft Office applications by managing macro settings.
-- User Application Hardening: Configuring and updating applications to work securely.
-- Restrict Administrative privileges: Limiting administrative privileges to minimize the risk of unauthorized access.
-- Patch Operating Systems: Keeping operating systems up to date with the latest patches.
-- Regular Backups: Performing regular backups to protect data and enable recovery in case of an incident.
+Backups: Performing regular data backups for effective disaster recovery.
