@@ -1,0 +1,15 @@
+From: Telstra Security Operations
+To: nbn team (nbn@email)
+Subject: ONGOING INCIDENT: Malware Attack on nbn services 
+—
+Body: 
+Hello nbn team,
+
+At 2022-03-20 03:16:34 UTC, Telstra Security Operations detected a malware attack on nbn services using a zero-day vulnerability affecting the Spring Framework. This has led to downtime across our nbn network, leading to impaired service functionality.
+
+Telstra Security Operations is monitoring the incident and will revert with an update. Please have site reliability engineers on standby for mitigation. 
+ 
+For any questions or issues, don’t hesitate to reach out to us.
+
+Kind regards,
+Telstra Security Operations
