@@ -53,6 +53,12 @@ First, analyse the firewall logs in the resources section. Next, identify what c
 ## Task 3 (T3) - Firewall Server
 This part of the repository contains the solution for a custom firewall server developed in Python. The server is designed to inspect incoming HTTP requests for malicious headers and block those that match a predefined list. The core functionality is implemented using Python's http.server module, extending BaseHTTPRequestHandler to perform header analysis and send a 403 Forbidden response for malicious requests.
 
+## Background Information:
+Work with the networks team to implement a firewall rule using the Python scripting language. Python is a common scripting language used across both offensive and defensive information security tasks. In this task, we will simulate the firewall’s scripting language by using an HTTP Server. You can assume this HTTP Server has no computational requirements and has the sole purpose of filtering incoming traffic. In the starter codebase, you will find a test script that you can use to simulate the malicious requests to the server. You can check out the Readme file in the starter codebase for more information on how to get started.
+
+## Task:
+Use Python to develop a firewall rule to mitigate the attack. Develop this rule in `firewall_server.py` and only upload this file back here. You may use `test_requests.py` to test your code whilst the firewall HTTP server is running.
+
 ## Usage
 
 1. Clone the repository to your local machine:
