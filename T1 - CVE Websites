@@ -1,18 +1,14 @@
-###CISA Alert Advisory on Spring4Shell zero-day vulnerability: https://www.cisa.gov/news-events/alerts/2022/04/01/spring-releases-security-updates-addressing-spring4shell-and-spring-cloud-function-vulnerabilities
+CISA Alert Advisory on Spring4Shell zero-day vulnerability: https://www.cisa.gov/news-events/alerts/2022/04/01/spring-releases-security-updates-addressing-spring4shell-and-spring-cloud-function-vulnerabilities
 
-###CVE Advisory on Spring4Shell zero-day vulnerability: <https://spring.io/security/cve-2022-22965>
+CVE Advisory on Spring4Shell zero-day vulnerability: <https://spring.io/security/cve-2022-22965>
 
-###Summary:
-##Spring4Shell (CVE-2022-22965)
-#Vulnerability Type: This is a Remote Code Execution (RCE) vulnerability found in the Spring Framework.
+Summary:
+Spring4Shell (CVE-2022-22965)
+- Vulnerability Type: This is a Remote Code Execution (RCE) vulnerability found in the Spring Framework.
+- Affected Systems: It impacts applications using Spring MVC or Spring WebFlux that are running on JDK 9 or newer. The most common exploit involves applications deployed as a WAR file on Apache Tomcat.
+- Affected Versions: Spring Framework versions 5.3.0 to 5.3.17 and 5.2.0 to 5.2.19 are vulnerable, along with older, unsupported versions.
+- Mitigation: Users are strongly advised to update to Spring Framework 5.3.18+ or 5.2.20+ immediately to fix the issue.
 
-#Affected Systems: It impacts applications using Spring MVC or Spring WebFlux that are running on JDK 9 or newer. The most common exploit involves applications deployed as a WAR file on Apache Tomcat.
-
-#Affected Versions: Spring Framework versions 5.3.0 to 5.3.17 and 5.2.0 to 5.2.19 are vulnerable, along with older, unsupported versions.
-
-#Mitigation: Users are strongly advised to update to Spring Framework 5.3.18+ or 5.2.20+ immediately to fix the issue.
-
-##Spring Cloud Function Vulnerability (CVE-2022-22963)
-#Vulnerability Type: This is also a Remote Code Execution (RCE) vulnerability, but it affects the Spring Cloud Function library.
-
-#Mitigation: The CISA alert recommends that users and administrators apply the necessary security updates released by Spring to address both the "Spring4Shell" and Spring Cloud Function vulnerabilities promptly.
+Spring Cloud Function Vulnerability (CVE-2022-22963)
+- Vulnerability Type: This is also a Remote Code Execution (RCE) vulnerability, but it affects the Spring Cloud Function library.
+- Mitigation: The CISA alert recommends that users and administrators apply the necessary security updates released by Spring to address both the "Spring4Shell" and Spring Cloud Function vulnerabilities promptly.
