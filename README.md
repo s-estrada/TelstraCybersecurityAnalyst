@@ -98,6 +98,16 @@ This repository contains the postmortem report for the Spring4Shell malware atta
 
 The Spring4Shell malware attack targeted the Spring Framework within our system infrastructure. The incident was promptly detected and addressed by the Security Operations Center (SOC) team. This postmortem report outlines the key findings and actions taken to mitigate the attack.
 
+### Background Information:
+The firewall rule worked in stopping the malware attack, 2 hours after the attack began. After an incident has occurred, it’s best practice to document and record what has happened. A common report written after an incident is a postmortem, which covers a timeline of what has occurred, who was involved in responding to the incident, a root cause analysis and any actions which have taken place. The purpose of the postmortem is to provide a ‘paper trail’ of what happened, which may be used in future governance, risk, or compliance audits, but also to educate the team on what went down, especially for those on the team who weren’t involved. In the resources section, you will find some educational content about what is an incident postmortem and why it’s important to create one.
+
+### Task:
+For this task, create an incident postmortem of the malware attack, covering the details you have picked up in the previous tasks. Make sure to include when the incident started and the root cause. Remember, the more detail the better.
+
+### Task 4 Resources:
+- [What is an incident postmortem](https://www.pagerduty.com/resources/digital-operations/learn/incident-postmortem/)
+- [Postmortem Template](https://github.com/s-estrada/TelstraCybersecurityAnalyst/blob/main/T4%20-%20Postmortem%20Template.docx)
+
 ### Contents
 - Summary
 - Impact
